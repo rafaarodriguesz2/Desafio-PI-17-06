@@ -35,13 +35,19 @@ button{
     height: 40px;
     border-radius: 60px;
     border: none;
+    transition: all 0.5s ease;
 }
 
 button:hover{
-    background-color: #ffffff00;
-    border: 1px solid white;
-    transition: 0.5s;
+    background-color: #4f6da8;
+    border: 1px solid #6f8fd3;
     color: white;
+}
+
+html, body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* NAVBAR */
@@ -105,6 +111,7 @@ width: 300px;
 height: 40px;
 border-radius: 15px;
 margin-bottom: 20px;
+text-align: center;
 }
 
 #container-divs{
@@ -421,4 +428,16 @@ progress::-moz-progress-bar {
     100%{
         transform: translateY(-100px);
     }
+}
+
+.simNão{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.div-radio{
+    text-align: start;
+    margin: 0px 200px;
+    color: white;
 }
