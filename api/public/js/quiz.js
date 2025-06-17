@@ -39,7 +39,7 @@ const piscinas = [
     capacidadeLitros: 108000  // 12×6×1,5 m ≈ 108 000 L :contentReference[oaicite:3]{index=3}
   },
   {
-    imagem: "https://via.placeholder.com/400x300?text=Piscina+Grande",
+    imagem: "",
     nome: "Piscina Grande (Olimpíca)",
     capacidadeLitros: 2500000  // piscina olímpica ≈ 2,5 milhões de litros :contentReference[oaicite:4]{index=4}
   }
@@ -107,7 +107,7 @@ function precoNosEua() {
 
 function precoNoBrasil() {
     resultadoDoChute3.innerHTML = `
-        <h1>Com idade de idade voce já consumiu 123728139 L de agua em sua vida inteira!</h1>
+        <h1>Com idade de 52 anos voce já consumiu 32.300 L de agua em sua vida inteira!</h1>
     `;
 }
 
@@ -115,7 +115,7 @@ function resultadoTempoDeCompra() {
     console.log("chegou aqui")
     resultadoDoChute4.innerHTML = `
     <h1>Isso equivale a uma Psicina media!</h1>
-    <h1>IMG Piscina</h1>
+    <img src="https://www.dutramaquinas.blog.br/wp-content/uploads/2024/03/2-770x470.jpg" style="height: 300px;"><img>
     `;
 }
 
