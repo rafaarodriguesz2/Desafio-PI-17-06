@@ -22,13 +22,6 @@
     src: url("../fonts/Miguel\ De\ Northern.ttf");
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    background-color: var(--roxo-fundo);
-    font-family: sans-serif;
-}
 
 button{
     width: 200px;
