@@ -93,10 +93,12 @@ function calculoAssertividade() {
 function precoNosEua() {
     resultadoDoChute2.innerHTML = `
             <h1>Qual o principal motivo que te leva a comprarr agua engarrafada?</h1>
+            <div class="div-radio">
             <label><input type="radio" name="pergunta1" value="sim">Pela água, obviamente.</label><br>
             <label><input type="radio" name="pergunta1" value="nao"> Pela garrafa, que vai virar um peso de papel estiloso na minha mesa.</label><br>
             <label><input type="radio" name="pergunta1" value="talvez"> Para fazer aquele barulhinho satisfatório de "CREC" ao amassar depois.</label><br>
             <label><input type="radio" name="pergunta1" value="nao_sei">  Para ter algo na mão e parecer uma pessoa misteriosa e saudável na academia.</label><br><br>
+            </div>
         `;
 }
 
