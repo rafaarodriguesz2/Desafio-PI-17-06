@@ -327,7 +327,7 @@ input {
 
 .simulador .container {
   flex-direction: column;
-  overflow: scroll; 
+  overflow: hidden; 
   height: var(--tamanho-simulador);
 }
 
@@ -388,7 +388,7 @@ input {
 
 .carrossel-imagem {
   display: flex;
-  width: 200%;
+  width: 95vw;
   height: 100%;
   animation: carrosselContinuo 10s linear infinite;
 }
