@@ -1,0 +1,424 @@
+/* Configurações */
+:root {
+    --amarelo-fundo: #e5bd00;
+    --amarelo-footer: #f8c300;
+    --color-titulos: rgb(27, 27, 27);
+    --roxo-fundo: #000000;
+    
+}
+
+@font-face {
+    font-family: "Akira";
+    src: url("../fonts/Akira\ Expanded\ Demo.otf");
+}
+
+@font-face {
+    font-family: "Andrea";
+    src: url("../fonts/Andrea\ Bellarosa.ttf");
+}
+
+@font-face {
+    font-family: "Miguel";
+    src: url("../fonts/Miguel\ De\ Northern.ttf");
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: var(--roxo-fundo);
+    font-family: sans-serif;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    border-radius: 60px;
+    border: none;
+}
+
+button:hover{
+    background-color: #ffffff00;
+    border: 1px solid white;
+    transition: 0.5s;
+    color: white;
+}
+
+/* NAVBAR */
+
+.ul-navbar li{
+    list-style: none;
+}
+
+.ul-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 7%;
+}
+
+.ul-navbar a{
+    font-size: 23px;
+    color: white;
+    font-family: "Akira";
+    text-decoration: none;
+}
+
+.ul-navbar a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+#nome_usuario{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.div_usuario{
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.div_usuario p{
+    margin-right: 8px;
+}
+/* Css Comparar */
+
+/* Conteudo Principal */
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#container
+select{
+width: 300px;
+height: 40px;
+border-radius: 15px;
+margin-bottom: 20px;
+}
+
+#container-divs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.div-comparar-preco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#div-esquerda p {
+    margin-bottom: 20px;
+}
+
+.div-esquerda{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.btn{
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: medium;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    transition-duration: 0.4s;
+    border-style: none;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    border: solid 2px;
+}
+
+#h1_renda_mensal{
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    animation: aparecer 2s ease-in-out;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card{
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 450px;
+    animation: aparecer 2s ease-in-out;
+}
+
+.div-card-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-titulo-p{
+    font-family: "Akira";
+    font-size: 25px;
+}
+
+.card p {
+    color: black;
+}
+
+.card input{
+    width: 300px;
+    height: 35px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+}
+
+.img-pais{
+    width: 50px;
+}
+
+
+.img-carros{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    animation: aparecer 2s ease-in-out;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.titulo-principal{
+    font-family: "Akira";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-principal h1{
+    margin: 0px;
+}
+
+.hide{
+    display: none;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#div-resultado-chute{
+    display: flex;
+    position: absolute;
+    margin-left: -250px;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.253);
+    animation: mostrarResultados 3s ease-in-out;
+}
+
+.titulo-carro{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Akira";
+    margin: 0px;
+}
+
+.div-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.descricao{
+    font-weight: bold;
+}
+
+.descricao-segunda-pagina{
+    margin-top: 4px;
+}
+
+/* Dash */
+
+.div_dash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div_dashBoard{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash{
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#graficos{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.titulo-segunda-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementos-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.elementos-row-p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+} 
+
+.margin{
+    margin:0 10px;
+}
+
+.img-resultado2{
+    width: 150px;
+    border-radius: 20px;
+
+}
+
+progress {
+    width: 400px;
+    height: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Estilo para o Chrome / Safari */
+progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #007bff;
+    border-radius: 20px;
+}
+
+/* Estilo para Firefox */
+progress::-moz-progress-bar {
+    background-color: #007bff;
+    border-radius: 20px;
+}
+
+#listaDeChutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.elementos-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*Footer com carrinho correndo*/
+#div-carro-correndo{
+    bottom: 0px;
+    height: 45px;
+    display: flex;
+    position: fixed;
+    margin-top: auto;
+}
+
+/* Animação */
+
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes mostrarResultados{
+    0%{
+        transform: translateY(-100px);
+    }
+    40%{
+        transform: translateY(500px);
+    }
+    60%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}

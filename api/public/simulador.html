@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AquaTech | Simulador</title>
+    <title>Engarrafa Tech</title>
 
     <script src="./js/sessao.js"></script>
 
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/quiz.css">
     <link rel="icon" href="./assets/icon/favicon2.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
@@ -38,30 +39,97 @@
     </div>
 
 
+
     <!-- simulador inicio -->
     <div class="simulador">
         <div class="container">
-            <h2>Simulador</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
+
+            <!-- Conteudo Principal -->
+            <div id="container">
+
+                <div class="titulo-principal" id="div_inicio">
+                    <h1>Descubra o quanto de agua você já consumiu na sua vida inteira!</h1>
+                    <button onclick="iniciar()">Começar Quiz</button>
+                </div>
+
+                <div class="titulo-principal hide" id="div_chute_preco">
+                    <h1>Quantos litros de agua você costuma consumir por dia?</h1>
+                    <div class="card">
+                        <h1 id="h1_renda_mensal">Qual a sua idade?</h1>
+                        <input type="text" id="ipt_preco_chutado" placeholder="Coloque aqui a sua idade!">
+                        <h1 id="h1_renda_mensal">Quantos litros de agua você costuma consumir por dia?</h1>
+                        <select id="ipt_select">
+                            <option value="4">4 L</option>
+                            <option value="2">2 L</option>
+                            <option value="1">1 L</option>
+                            <option value="0.5">0.5 L</option>
+                            <option value="0.2">0.2 L</option>
+                            <option value="Nada">Nada!</option>
+                        </select>
+                    </div>
+
+                    <button onclick="chutarPreco()">Próximo!</button>
+                </div>
+
+                <div id="div_resultado_chute" class="hide resultados">
+                    <div id="resultadoDoChute"></div>
+                    <button onclick="resultados()">Sim😀</button>
+                    <button onclick="resultados()">Não😔</button>
+                </div>
+
+                <div id="div_resultado_chute2" class="hide resultados">
+                    <div id="resultadoDoChute2"></div>
+                    <button onclick="resultados2()">Próximo</button>
+                </div>
+
+                <div id="div_resultado_chute3" class="hide resultados">
+                    <div id="resultadoDoChute3"></div>
+                    <button onclick="resultados3()">Próximo</button>
+                </div>
+
+                <div id="div_resultado_chute4" class="hide resultados">
+                    <div id="resultadoDoChute4"></div>
+                    <button onclick="resultados4()">Próximo</button>
+                </div>
+
+                <div class="hide" id="div_principal">
+                    <div id="container-divs">
+                        <div class="card">
+                            <div class="div-card-titulo">
+                                <p class="card-titulo-p">Preco no Brasil</p>
+                                <img src="../assets/banners/brasil.png" class="img-pais">
+                            </div>
+                            <div id="resultadoBrasil"></div>
+                        </div>
+                        <div class="card">
+                            <div class="div-card-titulo">
+                                <p class="card-titulo-p">Preco nos Eua</p>
+                                <img src="../assets/banners/eua.png" class="img-pais">
+                            </div>
+                            <div id="resultadoEua"></div>
+                        </div>
+                    </div>
+                    <div class="div-comparar-preco">
+                        <button onclick="outroCarro()" class="btn">Refazer Quiz</button>
+                        <button onclick="sair()" class="btn">Sair</button>
+                        <button onclick="dash()" class="btn">Veja os Graficos!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div_dash" class="hide">
+                <div class="div_dash">
+                    <h2>Bom dia <h2 id="b_usuario">Usuario</h2>
+                    </h2>
+                    <h1>Gráfico das últimas 10 medidas</h1>
+                    <div id="div_dash" class="div_dashBoard">
+                        <div id="graficos"></div>
+                    </div>
+                    <div id="listaDeChutes"></div>
+
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
         </div>
     </div>
@@ -75,8 +143,7 @@
         </div>
     </div>
     <!--footer fim-->
-
-
 </body>
+<script src="./js/quiz.js"></script>
 
 </html>
