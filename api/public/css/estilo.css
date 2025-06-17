@@ -322,7 +322,8 @@ input {
 /* SIMULADOR */
 
 .simulador {
-  color: var(--cor-4);
+  color: var(--cor-branco);
+  background-color: var(--cor-7);
 }
 
 .simulador .container {
@@ -442,6 +443,9 @@ input {
   margin-top: 10px;
   line-height: 1.5;
 }
+
+
+
 .informacoes {
   background-color: var(--cor-1);
   color: var(--cor-branco);
