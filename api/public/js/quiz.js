@@ -24,6 +24,9 @@ let carrosEua = null;
 let tempoParaComprarEua = 0;
 let tempoParaComprarBrasil = 0;
 
+let idade = 0;
+let qtdAguaPorDia = 0;
+
 const piscinas = [
   {
     imagem: "https://leisurepoolsusa.com/wp-content/uploads/2021/10/Leisure-Pools-Fiji-Plunge-small-pool.webp",
